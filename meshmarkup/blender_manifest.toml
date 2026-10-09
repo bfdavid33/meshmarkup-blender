@@ -1,0 +1,22 @@
+schema_version = "1.0.0"
+
+id = "meshmarkup"
+version = "1.0.0"
+name = "MeshMarkup"
+tagline = "Send your scene to clients as a 3D review link"
+maintainer = "Ivan <ivan@meshmarkup.com>"
+type = "add-on"
+website = "https://meshmarkup.com/blender"
+tags = ["Import-Export", "Pipeline"]
+
+blender_version_min = "4.2.0"
+license = ["SPDX:GPL-3.0-or-later"]
+copyright = ["2026 MeshMarkup"]
+
+[permissions]
+network = "Upload models to MeshMarkup and create review links"
+files = "Export the scene to GLB before sending it"
+clipboard = "Copy the review link to the clipboard"
+
+[build]
+paths_exclude_pattern = ["__pycache__/", "/.git/", "*.zip"]
